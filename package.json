@@ -2,13 +2,21 @@
   "name": "discord-register-bot",
   "version": "1.0.0",
   "description": "serviceexample",
-  "main": "src/index.js",
+  "main": "src/service.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon service.js"
   },
-  "author": "",
+  "author": "Deniz Kaparlar",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^14.9.0"
+    "discord.js": "^14.9.0",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
